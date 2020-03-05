@@ -318,6 +318,15 @@ template {
 [hidden] {
   display: none; }
 
+.button {
+  padding: 13px 20px;
+  border: none;
+  border-radius: 2px;
+  text-transform: uppercase; }
+  .button--primary {
+    background-color: #E3B873;
+    color: #fff; }
+
 .container {
   max-width: 1256px;
   margin: auto; }
@@ -347,14 +356,30 @@ template {
 .contacts__phone {
   margin-right: 45px; }
 
-.button {
-  padding: 13px 20px;
-  border: none;
-  border-radius: 2px;
-  text-transform: uppercase; }
-  .button--primary {
-    background-color: #E3B873;
-    color: #fff; }
+.hero {
+  position: relative;
+  background: #131313 url(../img/hero-bg.jpg) no-repeat center/cover;
+  height: 100vh; }
+  .hero__instagram {
+    position: absolute;
+    left: 0;
+    top: 0;
+    max-width: 80px;
+    height: 100%; }
+
+.instagram {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #131313; }
+  .instagram__link {
+    text-transform: uppercase;
+    color: #E3B873;
+    text-decoration: none;
+    transform: rotate(90deg); }
+
+.title {
+  margin: 0; }
 
 body {
   font-family: 'Futura Book', 'Futura Demi';
