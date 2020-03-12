@@ -363,6 +363,13 @@ img {
     text-align: center;
     text-transform: uppercase;
     font-family: 'Yeseva One', cursive; }
+    .section-title__desc {
+      max-width: 52.92rem;
+      margin-left: 20%;
+      font-size: 1rem;
+      line-height: 1.92rem;
+      font-family: FuturaBookC, normal;
+      text-align: center; }
     .section-title__image {
       display: flex;
       justify-content: center;
@@ -507,7 +514,8 @@ img {
     color: #E3B873; }
 
 .types__section-title {
-  margin-bottom: 2rem; }
+  margin-bottom: 2rem;
+  align-items: center; }
 
 .row {
   display: flex;
