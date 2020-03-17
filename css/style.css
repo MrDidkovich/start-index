@@ -369,7 +369,8 @@ template {
 
 .policy__label {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  font-size: 1.142rem; }
   .policy__label::before {
     content: '';
     width: 18px;
@@ -378,6 +379,8 @@ template {
     border-radius: 1px;
     cursor: pointer;
     margin-right: 0.64rem; }
+  .policy__label--center {
+    justify-content: center; }
 
 .container {
   width: 85%;
@@ -598,6 +601,54 @@ img {
   .title--primary {
     color: #E3B873; }
 
+.projects {
+  padding-bottom: 30rem; }
+
+.swiper-slide {
+  display: flex;
+  flex-wrap: wrap; }
+  .swiper-slide__text {
+    flex-basis: 50%;
+    margin-bottom: 2.42rem; }
+  .swiper-slide__heading {
+    font-size: 1.285rem;
+    line-height: 1.78rem;
+    font-family: Yeseva One, normal;
+    color: #E3B873;
+    text-transform: uppercase;
+    margin-bottom: 0.64rem; }
+  .swiper-slide__value {
+    font-size: 1.071rem;
+    line-height: 1.42rem;
+    font-family: FuturaBookC, normal;
+    color: #fff; }
+
+.swiper-pagination-bullet {
+  background: rgba(255, 255, 255, 0.3); }
+  .swiper-pagination-bullet-active {
+    background: #fff; }
+
+.swiper-button-prev, .swiper-button-next {
+  bottom: 0;
+  top: auto;
+  background-size: 42px;
+  width: 42px;
+  height: 14px;
+  color: #fff; }
+  .swiper-button-prev::after, .swiper-button-next::after {
+    display: none; }
+
+.swiper-button-prev {
+  left: 0;
+  background: url("../img/arrow-prev.svg") no-repeat center; }
+
+.swiper-button-next {
+  background: url("../img/arrow-next.svg") no-repeat center; }
+
+.swiper-container-horizontal > .swiper-pagination-bullets {
+  width: auto;
+  bottom: 0; }
+
 .control__video {
   position: relative;
   display: flex;
@@ -700,55 +751,54 @@ img {
   color: #fff;
   padding: 1.214rem 2.6em; }
 
-@media screen and (max-width: 1200px) {
-  html {
-    font-size: 12px; }
-  .nav__item {
-    margin-right: 1rem; } }
+.design {
+  padding-bottom: 30rem; }
+  .design__section-title {
+    margin-bottom: 2.79rem; }
 
-@media screen and (max-width: 992px) {
-  .nav {
-    display: none; }
-  .hero__instagram {
-    display: none; }
-  .hero__content {
-    margin-left: 0; } }
-
-@media screen and (max-width: 760px) {
-  .row {
-    flex-direction: column;
-    align-items: center; }
-  .types__card {
-    margin-bottom: 4rem; }
-  .card__text {
-    margin-left: 0; } }
-
-@media screen and (max-width: 570px) {
-  .contacts__phone {
-    margin-right: 0;
-    color: #fff;
-    text-decoration: none; }
-  .contacts__button {
-    display: none; }
-  .title {
-    font-size: 1.64rem; }
-  .hero__scroll-down {
-    display: none; }
-  .hero__content {
-    max-width: 22.86rem; }
-  .hero__text {
-    font-size: 1.29rem;
-    margin-bottom: 2.28rem; }
-  .hero__button {
-    display: block;
-    min-width: 22.86rem;
-    margin-bottom: 1.85rem; }
-  .control__input-group {
-    display: block; } }
-
-@media screen and (max-hight: 700px) {
-  .hero__scroll-down {
-    display: none; } }
+.footer {
+  background: #181818 url(../img/footer-bg.jpg) no-repeat center/cover;
+  padding-top: 3rem; }
+  .footer__wrap {
+    background: #181818 url(../img/bg-lines.svg) no-repeat center/cover;
+    max-width: 63.07rem;
+    margin: auto;
+    margin-top: -20rem;
+    margin-bottom: 3.714rem;
+    padding: 2.5rem; }
+  .footer__title {
+    text-transform: uppercase;
+    font-family: 'Yeseva One', normal;
+    font-weight: normal;
+    font-size: 1.428rem;
+    text-align: center;
+    margin-bottom: 3.214rem;
+    margin-top: 0; }
+  .footer__form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 37.142rem;
+    margin: auto; }
+  .footer__input {
+    padding-top: 0.3rem; }
+    .footer__input-group {
+      display: flex;
+      flex-direction: column;
+      flex-basis: 45%;
+      margin-bottom: 3.2rem; }
+      .footer__input-group--full-width {
+        flex-basis: 100%;
+        margin-bottom: 3.6rem; }
+  .footer__policy {
+    flex-basis: 100%;
+    margin-bottom: 2rem; }
+  .footer__button {
+    margin: auto;
+    padding: 1.285rem 4.785rem; }
+  .footer__menu {
+    background: #131313;
+    padding: 4.285rem 0; }
 
 .modal {
   opacity: 0;
@@ -801,50 +851,52 @@ img {
   .modal__button {
     align-self: flex-end; }
 
-.projects {
-  padding-bottom: 30rem; }
+@media screen and (max-width: 1200px) {
+  html {
+    font-size: 12px; }
+  .nav__item {
+    margin-right: 1rem; } }
 
-.swiper-slide {
-  display: flex;
-  flex-wrap: wrap; }
-  .swiper-slide__text {
-    flex-basis: 50%;
-    margin-bottom: 2.42rem; }
-  .swiper-slide__heading {
-    font-size: 1.285rem;
-    line-height: 1.78rem;
-    font-family: Yeseva One, normal;
-    color: #E3B873;
-    text-transform: uppercase;
-    margin-bottom: 0.64rem; }
-  .swiper-slide__value {
-    font-size: 1.071rem;
-    line-height: 1.42rem;
-    font-family: FuturaBookC, normal;
-    color: #fff; }
-
-.swiper-pagination-bullet {
-  background: rgba(255, 255, 255, 0.3); }
-  .swiper-pagination-bullet-active {
-    background: #fff; }
-
-.swiper-button-prev, .swiper-button-next {
-  bottom: 0;
-  top: auto;
-  background-size: 42px;
-  width: 42px;
-  height: 14px;
-  color: #fff; }
-  .swiper-button-prev::after, .swiper-button-next::after {
+@media screen and (max-width: 992px) {
+  .nav {
     display: none; }
+  .hero__instagram {
+    display: none; }
+  .hero__content {
+    margin-left: 0; } }
 
-.swiper-button-prev {
-  left: 0;
-  background: url("../img/arrow-prev.svg") no-repeat center; }
+@media screen and (max-width: 760px) {
+  .row {
+    flex-direction: column;
+    align-items: center; }
+  .types__card {
+    margin-bottom: 4rem; }
+  .card__text {
+    margin-left: 0; } }
 
-.swiper-button-next {
-  background: url("../img/arrow-next.svg") no-repeat center; }
+@media screen and (max-width: 570px) {
+  .contacts__phone {
+    margin-right: 0;
+    color: #fff;
+    text-decoration: none; }
+  .contacts__button {
+    display: none; }
+  .title {
+    font-size: 1.64rem; }
+  .hero__scroll-down {
+    display: none; }
+  .hero__content {
+    max-width: 22.86rem; }
+  .hero__text {
+    font-size: 1.29rem;
+    margin-bottom: 2.28rem; }
+  .hero__button {
+    display: block;
+    min-width: 22.86rem;
+    margin-bottom: 1.85rem; }
+  .control__input-group {
+    display: block; } }
 
-.swiper-container-horizontal > .swiper-pagination-bullets {
-  width: auto;
-  bottom: 0; }
+@media screen and (max-hight: 700px) {
+  .hero__scroll-down {
+    display: none; } }
