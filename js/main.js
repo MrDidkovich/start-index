@@ -46,4 +46,33 @@ $(document).ready(function () {
 	bullets.css('left', prev.width() + 10)
 
 	new WOW().init();
+
+	//Валидация формы
+	$('.modal__form').validate({
+		errorClass: "invalid",
+		rules: {
+			userName: {
+				required: true,
+				minlength: 4
+			}, //обязателбное поле имя
+			userPhone: "required",
+			userEmail: {
+				required: true,
+				email: true,
+			}
+		},
+		messages: {
+			userName: {
+				required: "Имя обязательно",
+				minlength: "Имя не короче 4-х букв"
+			},
+			userPhone: "Телефон обязателен",
+			userEmail: {
+				required: "Обязательно введите Email",
+				email: "Введите в формате: name@domain.com"
+			}
+		}
+	});
+	//маска для телефона
+	$('[type=tel').mask('+7(000) 00-00-00', {placeholder: "+7(___) __-__-___"});
 });
