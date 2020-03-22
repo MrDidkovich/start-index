@@ -74,7 +74,7 @@ $(document).ready(function () {
 		}
 	});
 	//маска для телефона
-	$('[type=tel').mask('+7(000) 00-00-00', {placeholder: "+7(___) __-__-___"});
+	$('[type=tel').mask('+7(000) 00-00-000', {placeholder: "+7(___) __-__-___"});
 
 	//создание Яндекс.Карты
 	ymaps.ready(function () {
